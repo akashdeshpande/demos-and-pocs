@@ -11,10 +11,14 @@ $("#btn1").click(function(){
                 <td>${userId}</td>
                 <td>${title}</td>
                 <td>${completed}</td>
-                <td><button class="btn btn-outline-light">Edit</button></td>
+                <td><button class="btn btn-outline-light edit-btn">Edit</button></td>
             </tr>`;
             $("#table1").append(child);
         }
         
     }});
 });
+
+function editData(id) {
+    console.log(id);
+} 
