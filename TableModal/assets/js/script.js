@@ -14,7 +14,12 @@ $("#btn1").click(function(){
                 <td>${userId}</td>
                 <td>${title}</td>
                 <td>${completed}</td>
-                <td><button class="btn btn-outline-light edit-btn" onclick="editData(${i})">Edit</button></td>
+                <td><button
+                    class="btn btn-outline-light edit-btn"
+                    onclick="editData(${i})"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >Edit</button></td>
             </tr>`;
             $("#table1").append(child);
         }
@@ -23,4 +28,9 @@ $("#btn1").click(function(){
 
 function editData(index) {
     console.log(receivedData[index]);
+    let entry = receivedData[index];
+    $("#modal-edit-id").val(entry.id);
+    $("#modal-edit-user-id").val(entry.userId);
+    $("#modal-edit-title").val(entry.title);
+    $("#modal-edit-completed").val(entry.completed);
 } 
