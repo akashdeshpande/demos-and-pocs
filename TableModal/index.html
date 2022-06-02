@@ -34,7 +34,12 @@
                     <td>0x0</td>
                     <td>some title</td>
                     <td>True</td>
-                    <td><button class="btn btn-outline-light" onclick="editData(5)">Edit</button></td>
+                    <td><button
+                            class="btn btn-outline-light"
+                            onclick="editData(5)"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                        >Edit</button></td>
                 </tr>
 
             </table>
@@ -42,9 +47,9 @@
     </div>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
-    </button>
+    </button> -->
     
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
