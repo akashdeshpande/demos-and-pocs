@@ -1,4 +1,4 @@
-let receivedData = {};
+let receivedData = [];
 
 $("#btn1").click(function(){
     $.ajax({url: "https://jsonplaceholder.typicode.com/todos", success: function(result){
