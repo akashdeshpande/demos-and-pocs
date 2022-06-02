@@ -14,13 +14,13 @@ $("#btn1").click(function(){
                 <td>${userId}</td>
                 <td>${title}</td>
                 <td>${completed}</td>
-                <td><button class="btn btn-outline-light edit-btn" onlick="editData(${id})">Edit</button></td>
+                <td><button class="btn btn-outline-light edit-btn" onclick="editData(${i})">Edit</button></td>
             </tr>`;
             $("#table1").append(child);
         }
     }});
 });
 
-function editData(id) {
-    console.log(receivedData[id]);
+function editData(index) {
+    console.log(receivedData[index]);
 } 
